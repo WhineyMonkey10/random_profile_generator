@@ -1,13 +1,21 @@
 ############### - Imports - ###############
 
-import namegen as ng
+from agegen import *
 
 from namegen import *
 
 
 ############### - Def Calls - ###############
+
+# Defining the persons name
 name = nameGenerator()
-print(name)
+
+# Defining the persons age
+age = ageGenerator()
+
+# Priting the above in a sentence
+print("Your name is:", name,", you are:", age, "years old!")
+
 
 
 
