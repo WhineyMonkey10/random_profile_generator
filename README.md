@@ -3,7 +3,7 @@
 
 *USAGE & CREDITS*
 
-Any public or priavte demonstrative usage of this project is strictly prohibited, UNLESS WhineyMonkey10 (https://github.com/WhineyMonkey10) is credited in the demonstration of the code.
+Any public or priavte demonstrative usage of this project is strictly prohibited, UNLESS WhineyMonkey10 (https://github.com/WhineyMonkey10) is credited in the demonstration of the code. Any malicious use of this project is not my responsability, this is for learning purposes only.
 
 To use this code you must:
     1. Download the project as a ZIP
@@ -15,8 +15,10 @@ To use this code you must:
 
 *INFORMATION ON THE PROFILE GENERATOR*
 
-None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. All of these credentials were created as purley fictional names. If the project gets discontinued the current update being worked on will NOT be uploaded and or finshed, all suggestions declined and README.md updated.
+None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. All of these credentials were created as purley fictional names. If the project gets discontinued the current update being worked on will NOT be uploaded and or finshed, all suggestions declined and README.md updated. If one of these profiles is a copy of your real life credentials, no responsability from my end will be take, as said in the discalimer here AND on the project none of these are meant to represent a real life person. 
 
 *PROBLEM DOCUMENTATION AND SUGGESTIONS*
 
 Of course, you can always make suggestion commits to the project, especially if there is an error, please make sure that you installed and properly setup the files, if you beleive that you have set it up correctly please try to loacte the problem, if it is not found make a comment to the project.
+
+
