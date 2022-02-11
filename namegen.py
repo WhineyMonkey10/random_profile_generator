@@ -2,9 +2,9 @@ def nameGenerator():
 
   import random
 
-  first_names = ["Tom", "Maya", "Jean", "Samerition", "Singual", "Bob", "Samantha", "Bart"]
-  middle_names = ["John", "Maxwell", "Kane", "Charles", "Louis", "Marley", "Drew", "Sam"]
-  last_names = ["Holland", "Dominic", "Samertons", "Simpson", "Zinkovic", "McDonald", "Sabet", "Vertez"]
+  first_names = ["Tom", "Maya", "Jean", "Samerition", "Singual", "Bob", "Samantha", "Bart", "Stan", "Cobra"]
+  middle_names = ["John", "Maxwell", "Kane", "Charles", "Louis", "Marley", "Drew", "Sam", "Stanley", "Kai"]
+  last_names = ["Holland", "Dominic", "Samertons", "Simpson", "Zinkovic", "McDonald", "Sabet", "Vertez", "Lee", "Never-Dies"]
 
   middle_name_q = input("Do you want your name to include a middle name? (Yes or No?). ")
 
@@ -16,7 +16,7 @@ def nameGenerator():
   random_number_1 = random.randint(0, len(last_names) - 1 )
   random_last_name = (''.join(last_names[random_number_1]))
   
-  if middle_name_q == ("Yes") or ("yEs") or ("yeS") or ("YES") or ("yea") or ("YEs") or ("yES") or ("YeS"): 
+  if middle_name_q == ("Yes") or ("yEs") or ("yeS") or ("YES") or ("yea") or ("YEs") or ("yES") or ("YeS") or ("yes"): 
   # Randomly Pick Middle Name
     random_number_2 = random.randint(0, len(middle_names) -1)
 
@@ -25,7 +25,7 @@ def nameGenerator():
   # Name addition
     final_name = (random_first_name + " " +        random_middle_name + " "+ random_last_name)
     
-  else:
+  if middle_name_q == ("No") or ("nO") or ("NO") or ("no"):
    final_name = (random_first_name + " " + random_last_name)
   
   return final_name
