@@ -16,7 +16,7 @@ def nameGenerator():
   random_number_1 = random.randint(0, len(last_names) - 1 )
   random_last_name = (''.join(last_names[random_number_1]))
   
-  if middle_name_q == ("Yes") or ("yEs") or ("yeS") or ("YES") or ("yea") or ("YEs") or ("yES") or ("YeS") or ("yes"): 
+  if middle_name_q == ("Yes") or ("yEs") or ("yeS") or ("YES") or ("yes") or ("YEs") or ("yES") or ("YeS"): 
   # Randomly Pick Middle Name
     random_number_2 = random.randint(0, len(middle_names) -1)
 
@@ -25,7 +25,9 @@ def nameGenerator():
   # Name addition
     final_name = (random_first_name + " " +        random_middle_name + " "+ random_last_name)
     
-  if middle_name_q == ("No") or ("nO") or ("NO") or ("no"):
+  if middle_name_q == ("no") or ("No") or ("NO") or ("nO"): 
    final_name = (random_first_name + " " + random_last_name)
-  
   return final_name
+
+
+  
