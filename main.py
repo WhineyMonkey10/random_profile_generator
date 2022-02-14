@@ -1,4 +1,3 @@
-#NOTE TO SELF - FIX NAMEGEN.PY SHOWING MIDDLE NAMES EVEN WITH "NO" OPTION AND ADD FAMILY GEN AND NICK GEN TO MAIN.PY
 ############### - Imports - ###############
 
 from agegen import *
