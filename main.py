@@ -1,3 +1,4 @@
+
 ############### - Imports - ###############
 
 from agegen import *
@@ -8,8 +9,13 @@ from addressgen import *
 
 from nickgen import *
 
+from gui import *
+
 import time
 
+from tkinter import *
+
+import PySimpleGUI as sg
 
 ############### - Def Calls - ###############
 
@@ -26,13 +32,18 @@ addr = addrGenerator()
 nick = nickGen()
 
 # Priting the above in a sentence & Adding a disclaimer
-print("DISCLAIMER: None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for learning purposes only.")
+print("DISCLAIMER: None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for educational purposes only.")
 
 # Adding time for the user to read the disclaimer
 time.sleep(1)
 
 # Actually printing the final product
-print("Your name is:", name, "also known as (your nickname) ",nick, ", you live in", addr, ", and you are:", age, "years old!")
+finalres = ("Your name is:", name, "also known as (your nickname) ",nick, ", you live in", addr, ", and you are:", age, "years old!")
+
+
+print(finalres)
+
+
 
 
 
