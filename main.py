@@ -32,7 +32,8 @@ addr = addrGenerator()
 nick = nickGen()
 
 # Priting the above in a sentence & Adding a disclaimer
-print("DISCLAIMER: None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for educational purposes only.")
+print("DISCLAIMER: ")
+print("None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for educational purposes only.")
 
 # Adding time for the user to read the disclaimer
 time.sleep(1)
