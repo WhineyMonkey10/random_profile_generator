@@ -2,7 +2,7 @@ def nameGenerator():
 
   import random
 
-  first_names = ["Tom", "Maya", "Jean", "Samerition", "Singual", "Bob", "Samantha", "Bart", "Stan", "Cobra"]
+  first_names = ["Tom", "Maya", "Jean", "Samerition", "Singual", "Bob", "Samantha", "Bart", "Stan", "Cobra", "Johnathon", "Jhon"]
   middle_names = ["John", "Maxwell", "Kane", "Charles", "Louis", "Marley", "Drew", "Sam", "Stanley", "Kai"]
   last_names = ["Holland", "Dominic", "Samertons", "Simpson", "Zinkovic", "McDonald", "Sabet", "Vertez", "Lee", "Never-Dies"]
 
