@@ -19,20 +19,21 @@ import PySimpleGUI as sg
 
 ############### - Def Calls - ###############
 
-# Defining the persons name
+# Defining the profiles name
 name = nameGenerator()
 
-# Defining the persons age
+# Defining the profiles age
 age = ageGenerator()
 
-# Defining the persons adddress
+# Defining the profiles adddress
 addr = addrGenerator()
 
-#Defining the perons nickname
+#Defining the profiles nickname
 nick = nickGen()
 
 # Priting the above in a sentence & Adding a disclaimer
 print("DISCLAIMER: ")
+time.sleep(0.5)
 print("None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for educational purposes only.")
 
 # Adding time for the user to read the disclaimer
