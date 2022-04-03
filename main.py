@@ -9,8 +9,6 @@ from addressgen import *
 
 from nickgen import *
 
-from gui import *
-
 import time
 
 from tkinter import *
@@ -40,7 +38,7 @@ print("None of these credentials, addresses, names, ages or others are meant to 
 time.sleep(1)
 
 # Actually printing the final product
-finalres = ("Your name is:", name, "also known as (your nickname) ",nick, ", you live in", addr, ", and you are:", age, "years old!")
+finalres = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old!"
 
 
 print(finalres)
