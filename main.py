@@ -1,4 +1,3 @@
-
 ############### - Imports - ###############
 
 from agegen import *
@@ -8,6 +7,8 @@ from namegen import *
 from addressgen import *
 
 from nickgen import *
+
+from allergies import *
 
 import time
 
@@ -29,6 +30,9 @@ addr = addrGenerator()
 #Defining the profiles nickname
 nick = nickGen()
 
+#Defining the profiles allergy
+allergie = allergiesGen()
+
 # Priting the above in a sentence & Adding a disclaimer
 print("DISCLAIMER: ")
 time.sleep(0.5)
@@ -38,12 +42,10 @@ print("None of these credentials, addresses, names, ages or others are meant to 
 time.sleep(1)
 
 # Actually printing the final product
-finalres = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old!"
+finalres = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}."
 
 
 print(finalres)
-
-
 
 
 
