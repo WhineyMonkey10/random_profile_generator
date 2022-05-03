@@ -71,12 +71,16 @@ print(Fore.RED + "None of these credentials, addresses, names, ages or others ar
 # Adding time for the user to read the disclaimer
 time.sleep(1)
 
+type = input("Please enter the type of profile you would like to generate (web server, gui, text): ")
 
 # Actually printing the final product
 finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
 finalguicompatible = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
 
 print(finalres)
+
+
+#input("Do you want to save this profile? (Yes or No)")
 
 
 #Initialise the GUI
