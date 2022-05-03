@@ -12,9 +12,9 @@ To use this code you must:
     4. Upload the file to VS Code
 
    5. Run the code
+![download](https://user-images.githubusercontent.com/71403599/166504880-1d9a484e-f525-4b97-ba94-cbbe74c7a6f2.png)
  
- ![download](https://user-images.githubusercontent.com/71403599/166504693-9b027814-d12f-4977-b6c5-6e37c85ba438.png)
-Install the following packages:
+   Install the following packages:
     If it prints "Requirement already satisfied: " you may just move on to the next package. In this example I'll be using pip, but if you have use pip3 or other package installers use those
 
     pip install PySimpleGUI
