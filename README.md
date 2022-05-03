@@ -12,7 +12,15 @@ To use this code you must:
     4. Upload the file to VS Code
     5. Run the code
 
+Install the following packages:
+    If it prints "Requirement already satisfied: " you may just move on to the next package. In this example I'll be using pip, but if you have use pip3 or other package installers use those
 
+    pip install PySimpleGUI
+    pip install time
+    pip install colorama
+    pip install random
+
+If it throws any errors requesting the package to be installed, INSTALL IT
 
 
 *INFORMATION ON THE PROFILE GENERATOR*
