@@ -1,1 +1,1 @@
-#Init file for gens.
+#Init file for the gen package.
