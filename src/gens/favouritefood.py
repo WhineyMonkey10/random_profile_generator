@@ -5,7 +5,7 @@ def favouritefood():
 
   
 
-  random_foodnum = random.randint(0, 19)
+  random_foodnum = random.randint(0, len(favfood) - 1)
 
   favfood1 = (''.join((favfood[random_foodnum])))
 

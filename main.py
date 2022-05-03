@@ -19,6 +19,8 @@ from src.gens.Bestfriend import *
 
 from src.gens.eyecolourgen import *
 
+from src.gui.main import *
+
 import time
 
 from tkinter import *
@@ -72,5 +74,12 @@ time.sleep(1)
 
 # Actually printing the final product
 finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
+finalguicompatible = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
 
 print(finalres)
+
+
+#Initialise the GUI
+height = 500 #2
+width = 2000 #1
+create(width, height, finalres)
