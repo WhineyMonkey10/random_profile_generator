@@ -1,17 +1,22 @@
 # Random Profile Generator
 
+![image](https://user-images.githubusercontent.com/71403599/166505482-78b7a693-5a0e-43de-833d-2c7974adb90b.png)
+
+
 
 *USAGE & CREDITS*
 
 Any public or priavte demonstrative usage of this project is strictly prohibited, UNLESS WhineyMonkey10 (https://github.com/WhineyMonkey10) is credited in the demonstration of the code. Any malicious use of this project is not my responsability, this is for learning purposes only. If you get in trouble for the use of this project, the developer(s) are not responsable.
+
+![image](https://user-images.githubusercontent.com/71403599/166505554-ffe129e9-dcb9-4f86-a896-5147eed24027.png)
 
 To use this code you must:
     1. Download the project as a ZIP (Latest release recommended)
     2. Extract the ZIP into a file
     3. Open a program such as Visual Studio Code
     4. Upload the file to VS Code
+    5. Run the code
 
-   5. Run the code
 ![download](https://user-images.githubusercontent.com/71403599/166504880-1d9a484e-f525-4b97-ba94-cbbe74c7a6f2.png)
  
    Install the following packages:
@@ -23,6 +28,8 @@ To use this code you must:
     pip install random
 
 If it throws any errors requesting the package to be installed, INSTALL IT
+
+![image](https://user-images.githubusercontent.com/71403599/166505681-d2a58620-a337-4d27-85c5-59723e5b8092.png)
 
 
 *INFORMATION ON THE PROFILE GENERATOR*
