@@ -1,20 +1,22 @@
 ############### - Imports - ###############
 
-from agegen import *
+from src.gens.agegen import *
 
-from namegen import *
+from src.gens.namegen import *
 
-from addressgen import *
+from src.gens.addressgen import *
 
-from nickgen import *
+from src.gens.nickgen import *
 
-from allergies import *
+from src.gens.allergies import *
 
-from favouritefood import *
+from src.gens.favouritefood import *
 
-from borngen import *
+from src.gens.borngen import *
 
-from Bestfriend import *
+from src.gens.Bestfriend import *
+
+from src.gens.eyecolourgen import *
 
 import time
 
@@ -48,6 +50,9 @@ born = borngen()
 #Definfing the profiles best friend
 bestfriend = your_best_friend()
 
+#Defining the profiles eye colour
+eyecolour = eyecolourgen()
+
 # Priting the above in a sentence & Adding a disclaimer
 print("DISCLAIMER: ")
 time.sleep(0.5)
@@ -58,6 +63,6 @@ time.sleep(1)
 
 
 # Actually printing the final product
-finalres = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}."
+finalres = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
 
 print(finalres)

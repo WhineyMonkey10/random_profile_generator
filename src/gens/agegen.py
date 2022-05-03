@@ -9,7 +9,7 @@ def ageGenerator():
   else:
     if probagenum == 2:
       age = ("Unborn (Ignore years old)")
-     else:
+    else:
       if probagenum == 5:
         age = ("Dead (Ignore years old)")
   
