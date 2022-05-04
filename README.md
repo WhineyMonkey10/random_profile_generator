@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/71403599/166505482-78b7a693-5a0e-43de-833d-2c7974adb90b.png)
 
-
+You can join the Discord server @ https://discord.gg/VxgNQACtrk.
 
 *USAGE & CREDITS*
 
@@ -34,7 +34,7 @@ If it throws any errors requesting the package to be installed, INSTALL IT
 
 *INFORMATION ON THE PROFILE GENERATOR*
 
-None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. All of these credentials were created as purley fictional names. If the project gets discontinued the current update being worked on will NOT be uploaded and or finshed, all suggestions declined and README.md updated. If one of these profiles is a copy of your real life credentials, no responsability from my end will be take, as said in the discalimer here AND on the project none of these are meant to represent a real life person. If you have suggestions, feel free to branch it. Please also remember to keep the License in mind before distributing this code or any other things alike.
+None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. All of these credentials were created as purley fictional names. If the project gets discontinued the current update being worked on will NOT be uploaded and or finshed, all suggestions declined and README.md updated. If one of these profiles is a copy of your real life credentials, no responsability from my end will be take, as said in the discalimer here AND on the project none of these are meant to represent a real life person. If you have suggestions, feel free to branch it. Please also remember to keep the License in mind before distributing this code or any other things alike. You can join the Discord server @ https://discord.gg/VxgNQACtrk.
 
 *PROBLEM DOCUMENTATION AND SUGGESTIONS*
 
