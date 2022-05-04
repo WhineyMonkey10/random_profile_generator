@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Random Profile Generator</title>
-    <script type="text/javascript" src=c:\\Users\\WhMonkey\\random_profile_generator\\src\\localserver\\main.js"></script>
+    <script>
+        function randomProfile() {
+            var random = Math.floor(Math.random() * 100) + 1;
+            document.getElementById("random").innerHTML = random;
+        }
+    </script>
 </head>
  
 <body>
- 
+    <h1>Random Profile Generator</h1>
+    <p>This page will generate a random profile for you. Please press the button below to generate one: 
+    </p>
+
+    <button type="button" onclick="randomProfile">Click me!</button>
 </body>
- 
+    
  
  
 </html>

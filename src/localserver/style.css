@@ -1,7 +1,35 @@
+body {
+    background-image: url(items/Background.png);
+    background-image: norepeat;
+    background-size: cover;
+}
+
+
 h1 {
     color: #000;
-    font-size: 14px;
+    font-size: 8rem;
     font-weight: bold;
     margin: 0;
     padding: 10px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:rgb(32, 32, 29);
+}
+
+button {
+    background-image: url(items/Background.png);
+    text-align: center;
+    border-color: aqua;
+    border-radius: 10px;
+    margin: 2rem;
+    margin-left: 77rem;
+    color: white;
+    size: 20rem;
+    font-size: 1.5rem;
 }
