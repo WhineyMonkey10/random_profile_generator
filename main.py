@@ -71,19 +71,32 @@ print(Fore.RED + "None of these credentials, addresses, names, ages or others ar
 # Adding time for the user to read the disclaimer
 time.sleep(1)
 
-type = input("Please enter the type of profile you would like to generate (web server, gui, text): ")
+type = input(f"{Fore.CYAN}Please enter the type of profile you would like to generate (web server, gui, text): ")
+type = (type.casefold())
 
-# Actually printing the final product
+#Initialising the final product
 finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
-finalguicompatible = f"Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
+finalguicompatible = "Your name is:", name, "also known as (your nickname)", nick,  "you live in", addr, ",and you are:", age,"years old!,", allergie, ".", favfood, "." "You were born in:", born,  "and your BFF is", bestfriend, "." ,"Your eye colour is:", eyecolour, "."
+finalguicompatible = str(finalguicompatible)
+finalguicompatible = ''.join(finalguicompatible)
+#Using the users inpit method to determine the 'type' of profile they want to generate 
 
-print(finalres)
+if type == "web server":
+    print("This version is currently in development, please see the folder src/localserver/ for the current webserver process.")
+    exit()
+
+elif type == "gui":
+    sg.theme('BlueMono')
+    print("Please note that the GUI is still in development, please see the folder src/gui/ for the current gui process. Although, it still works. It has been opened.")
+    #Initialise the GUI
+    height = 500 #2
+    width = 2000 #1
+    create(width, height, finalres)
+
+elif type == "text":
+    print(finalres)
 
 
 #input("Do you want to save this profile? (Yes or No)")
 
 
-#Initialise the GUI
-height = 500 #2
-width = 2000 #1
-create(width, height, finalres)
