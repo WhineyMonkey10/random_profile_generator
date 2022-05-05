@@ -1,5 +1,1 @@
-let btn = document.createElement("button");
-btn.innerHTML = "Submit";
-btn.type = "submit";
-btn.name = "formBtn";
-document.body.appendChild(btn);
+//Not needed for now, hopefully will find a use for it later.
