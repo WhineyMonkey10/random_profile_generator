@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Random Profile Generator</title>
     <script>
-        function randomProfile() {
-            var random = Math.floor(Math.random() * 100) + 1;
-            document.getElementById("random").innerHTML = random;
+        function display() {
+          alert("Hello World!");
         }
-    </script>
+     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython.js" integrity="sha512-fTTTeAkdIAvPMNUCydIZlpnvbNfixyDvDlUvViGvMRFwfjvfAs45QJsg9uFK4mobE6Kgr1u54XsI/mDr/kYRKw==" crossorigin="anonymous"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.js" integrity="sha512-0fx1odrHyoDzFwE3EGtMeYOvke6IYAFyVkApiBNP4gFRfi3VPcpSIT6ir1rXsndXxtHHrCLsuheIvlYSAVCpKg==" crossorigin="anonymous"></script>
+
 </head>
  
 <body>
@@ -19,7 +21,10 @@
     <p>This page will generate a random profile for you. Please press the button below to generate one: 
     </p>
 
-    <button type="button" onclick="randomProfile">Click me!</button>
+
+    <button type="button" onclick="display()">Click me!</button>
+
+
 </body>
     
  

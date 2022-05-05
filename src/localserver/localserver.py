@@ -1,13 +1,13 @@
-user = input("Please enter your file path, for example : c:\\Users\\WhMonkey\\random_profile_generator\\src\\localserver\\ : ")
 
 
+import os
 import http.server
 import socketserver
 from os import path
-
+user = os.path.abspath(os.getcwd())
 my_host_name = 'localhost'
 my_port = 8888
-my_html_folder_path = f'{user}'
+my_html_folder_path = '.\\src\\localserver\\'
 
 my_home_page_file_path = 'index.html'
 
