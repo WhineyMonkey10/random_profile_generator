@@ -1,4 +1,4 @@
-
+fileloc = input("Please enter the file location, for example : C:\\Users\\WhMonkey\\Downloads\\random_profile_generator\\src\\localserver : ")
 
 import os
 import http.server
@@ -7,7 +7,7 @@ from os import path
 user = os.path.abspath(os.getcwd())
 my_host_name = 'localhost'
 my_port = 8888
-my_html_folder_path = '.\\src\\localserver\\'
+my_html_folder_path = f'{fileloc}'
 
 my_home_page_file_path = 'index.html'
 
