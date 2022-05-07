@@ -85,6 +85,7 @@ finalguicompatible = ''.join(finalguicompatible)
 
 if type == "web server":
     from src.localserver.website.localserver import *
+
     initalise_server()
 
 elif type == "gui":

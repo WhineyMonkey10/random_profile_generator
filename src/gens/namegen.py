@@ -1,12 +1,13 @@
 def nameGenerator():
 
   import random
+  import colorama
 
   first_names = ["Tom", "Maya", "Jean", "Samerition", "Singual", "Bob", "Samantha", "Bart", "Stan", "Cobra", "Johnathon", "Jhon"]
   middle_names = ["John", "Maxwell", "Kane", "Charles", "Louis", "Marley", "Drew", "Sam", "Stanley", "Kai"]
   last_names = ["Holland", "Dominic", "Samertons", "Simpson", "Zinkovic", "McDonald", "Sabet", "Vertez", "Lee", "Never-Dies"]
 
-  middle_name_q = input("Do you want your name to include a middle name? (Yes or No?): ")
+  middle_name_q = input(f"{colorama.Fore.CYAN}Do you want your name to include a middle name? (Yes or No?): ")
   middle_name_q = (middle_name_q.casefold())
 
 # Randomly Pick First Name

@@ -38,6 +38,6 @@ None of these credentials, addresses, names, ages or others are meant to replica
 
 *PROBLEM DOCUMENTATION AND SUGGESTIONS*
 
-Of course, you can always make suggestion commits to the project, especially if there is an error, please make sure that you installed and properly setup the files, if you beleive that you have set it up correctly please try to loacte the problem, if it is not found make a comment to the project.
+Of course, you can always make suggestion commits to the project, especially if there is an error, please make sure that you installed and properly setup the files, if you beleive that you have set it up correctly please try to loacte the problem, if it is not found make a comment to the project. Or, create a fork and add a problem.
 
 
