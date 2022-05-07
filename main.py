@@ -21,6 +21,8 @@ from src.gens.eyecolourgen import *
 
 from src.gui.main import *
 
+from src.localserver.website.localserver import *
+
 import time
 
 from tkinter import *
@@ -82,8 +84,8 @@ finalguicompatible = ''.join(finalguicompatible)
 #Using the users inpit method to determine the 'type' of profile they want to generate 
 
 if type == "web server":
-    print("This version is currently in development, please see the folder src/localserver/ for the current webserver process.")
-    exit()
+    from src.localserver.website.localserver import *
+    initalise_server()
 
 elif type == "gui":
     sg.theme('BlueMono')
