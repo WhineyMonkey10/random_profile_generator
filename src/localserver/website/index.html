@@ -8,6 +8,8 @@
     <title>Random Profile Generator</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython.js" integrity="sha512-fTTTeAkdIAvPMNUCydIZlpnvbNfixyDvDlUvViGvMRFwfjvfAs45QJsg9uFK4mobE6Kgr1u54XsI/mDr/kYRKw==" crossorigin="anonymous"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.js" integrity="sha512-0fx1odrHyoDzFwE3EGtMeYOvke6IYAFyVkApiBNP4gFRfi3VPcpSIT6ir1rXsndXxtHHrCLsuheIvlYSAVCpKg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body onload = "brython()" >
     
@@ -19,8 +21,19 @@
     <script type="text/python">
         from main import *
         print(finalres)
-    </script>
+    </script> 
 
+    <script type="text/python">
+        from script import *
+        document['finalres'] <= "a "
+    </script>
+    
+    <h1 id="finalres"></h1>
+
+
+    
+
+ 
 
 </body>
     
