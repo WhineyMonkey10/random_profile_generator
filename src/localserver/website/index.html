@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-US">
- 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Random Profile Generator</title>
-    <script src="scripts.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython.js" integrity="sha512-fTTTeAkdIAvPMNUCydIZlpnvbNfixyDvDlUvViGvMRFwfjvfAs45QJsg9uFK4mobE6Kgr1u54XsI/mDr/kYRKw==" crossorigin="anonymous"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.js" integrity="sha512-0fx1odrHyoDzFwE3EGtMeYOvke6IYAFyVkApiBNP4gFRfi3VPcpSIT6ir1rXsndXxtHHrCLsuheIvlYSAVCpKg==" crossorigin="anonymous"></script>
-
 </head>
- 
-<body>
+<body onload = "brython()" >
+
     <h1>Random Profile Generator</h1>
     <p>This page will generate a random profile for you. Please press the button below to generate one: 
     </p>
 
 
     <button type="button" onclick="display()">Click me!</button>
+    <script type="text/python">
+        from main import *
+        print(finalres)
+    </script>
 
 
 </body>
