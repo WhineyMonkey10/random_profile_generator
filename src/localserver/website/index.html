@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Random Profile Generator</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython.js" integrity="sha512-fTTTeAkdIAvPMNUCydIZlpnvbNfixyDvDlUvViGvMRFwfjvfAs45QJsg9uFK4mobE6Kgr1u54XsI/mDr/kYRKw==" crossorigin="anonymous"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.js" integrity="sha512-0fx1odrHyoDzFwE3EGtMeYOvke6IYAFyVkApiBNP4gFRfi3VPcpSIT6ir1rXsndXxtHHrCLsuheIvlYSAVCpKg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <link rel="stylesheet" href="style.css">
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <script src="scripts.js"></script>
+
 </head>
 <body onload = "brython()" >
     
@@ -18,18 +18,24 @@
     <p>This page will generate a random profile for you. Please press the button below to generate one: 
     </p>
 
-    <button type="button" onclick="alert()">Click me!</button>
-    <script type="text/python">
-        from main import *
-        print(finalres)
-    </script> 
+    <button type="button" onclick="newTab()"> Click me!</button>
+ 
+    <py-env>
+        - numpy
+        - paths:
+            - /test.py
+            - /src
+    </py-env>
 
-    <script type="text/python">
-        from script import *
-        document['finalres'] <= "a "
-    </script>
-    
-    <h1 id="finalres"></h1>
+    <py-script>
+        def butonclicked():
+            print("amogus")
+    </py-script>
+
+    <button type="button" onclick="buttonclicked()">AMONGUSUS</button>
+
+
+    <py-button type="button" onclick="buttonclicked()">e</py-button>
 
 
     

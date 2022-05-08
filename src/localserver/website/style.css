@@ -25,11 +25,11 @@ p {
 button {
     background-image: url(items/Background.png);
     text-align: center;
-    border-color: aqua;
+    border-color: rgb(27, 23, 23);
     border-radius: 10px;
     margin: 2rem;
     margin-left: 77rem;
-    color: white;
+    color: rgb(0, 0, 0);
     size: 20rem;
     font-size: 1.5rem;
 }

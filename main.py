@@ -35,6 +35,8 @@ from colorama import Back, Fore, Style
 
 ############### - Def Calls - ###############
 
+x = 0
+
 # Defining the profiles name
 name = nameGenerator()
 
