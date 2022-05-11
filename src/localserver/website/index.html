@@ -12,33 +12,29 @@
     <script src="scripts.js"></script>
 
 </head>
-<body onload = "brython()" >
+<body>
     
     <h1>Random Profile Generator</h1>
     <p>This page will generate a random profile for you. Please press the button below to generate one: 
     </p>
 
-    <button type="button" onclick="newTab()"> Click me!</button>
- 
+    
     <py-env>
         - numpy
         - paths:
-            - /test.py
-            - /src
+            - /main.py
     </py-env>
-
-    <py-script>
-        def butonclicked():
-            print("amogus")
-    </py-script>
-
-    <button type="button" onclick="buttonclicked()">AMONGUSUS</button>
-
-
-    <py-button type="button" onclick="buttonclicked()">e</py-button>
-
-
     
+    <py-script>
+        def btn_clicked(*args, **kwargs):
+ 
+            pyscript.write("id_btn", "Button Clicked")
+    </py-script>
+    
+<button id="id_btn" class="" type="submit" pys-onClick="btn_clicked"> Test </button>
+
+
+
 
  
 

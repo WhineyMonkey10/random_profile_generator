@@ -1,4 +1,5 @@
 ############### - Imports - ###############
+from src import *
 
 from numpy import true_divide
 from src.gens.agegen import *
