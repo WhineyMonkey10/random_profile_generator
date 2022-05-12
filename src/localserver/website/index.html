@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Random Profile Generator</title>
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
     <link rel="stylesheet" href="style.css">
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <script src="scripts.js"></script>
@@ -23,16 +23,18 @@
     <py-env>
         - numpy
         - paths:
-            - /main.py
+            - /test.py
     </py-env>
     
     <py-script>
-        def btn_clicked(*args, **kwargs):
+        from test import *
+x = x
+def btn_clicked(*args, **kwargs):
  
-            pyscript.write("id_btn", "Button Clicked")
+    	pyscript.write("id_btn", x)
     </py-script>
     
-<button id="id_btn" class="" type="submit" pys-onClick="btn_clicked"> Test </button>
+<button id="id_btn" class="button" type="submit" pys-onclick="btn_clicked"> Click Me! </button>
 
 
 
