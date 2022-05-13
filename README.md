@@ -6,7 +6,7 @@ You can join the Discord server @ https://discord.gg/VxgNQACtrk.
 
 *USAGE & CREDITS*
 
-Any public or priavte demonstrative usage of this project is strictly prohibited, UNLESS WhineyMonkey10 (https://github.com/WhineyMonkey10) is credited in the demonstration of the code. Any malicious use of this project is not my responsability, this is for learning purposes only. If you get in trouble for the use of this project, the developer(s) are not responsable. The web server version is currently not fully supported for ReplIT.
+Any public or private demonstrative usage of this project is strictly prohibited, UNLESS WhineyMonkey10 (https://github.com/WhineyMonkey10) is credited in the demonstration of the code. Any malicious use of this project is not my responsability, this is for learning purposes only. If you get in trouble for the use of this project, the developer(s) are not responsable. The web server version is currently not fully supported for ReplIT.
 
 ![image](https://user-images.githubusercontent.com/71403599/166505554-ffe129e9-dcb9-4f86-a896-5147eed24027.png)
 
