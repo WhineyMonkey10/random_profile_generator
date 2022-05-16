@@ -24,6 +24,16 @@
         - numpy
         - paths:
             - /test.py
+            - /src/gens/addressgen.py
+            - /src/gens/agegen.py
+            - /src/gens/allergies.py
+            - /src/gens/Bestfriend.py
+            - /src/gens/borngen.py
+            - /src/gens/eyecolourgen.py
+            - /src/gens/familygen.py
+            - /src/gens/favouritefood.py
+            - /src/gens/namegen.py
+            - /src/gens/nickgen.py
     </py-env>
     
     <py-script>
@@ -35,6 +45,13 @@ def btn_clicked(*args, **kwargs):
     </py-script>
     
 <button id="id_btn" class="button" type="submit" pys-onclick="btn_clicked"> Click Me! </button>
+
+
+
+
+<py-script>
+    from main import *
+</py-script>
 
 
 
