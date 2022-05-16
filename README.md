@@ -26,6 +26,7 @@ To use this code you must:
     pip install time
     pip install colorama
     pip install random
+    pip install flask
 
 If it throws any errors requesting the package to be installed, INSTALL IT
 
