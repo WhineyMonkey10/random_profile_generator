@@ -28,6 +28,12 @@ To use this code you must:
     pip install random
     pip install flask
 
+
+Note, you can use: 
+
+    python -c "import flask; print(flask.__version__)"
+to check your flask version to make sure that it's up to date, it should be something around ``2.1.1``
+
 If it throws any errors requesting the package to be installed, INSTALL IT
 
 ![image](https://user-images.githubusercontent.com/71403599/166505681-d2a58620-a337-4d27-85c5-59723e5b8092.png)
