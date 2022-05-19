@@ -19,7 +19,7 @@ To use this code you must:
 
 ![download](https://user-images.githubusercontent.com/71403599/166504880-1d9a484e-f525-4b97-ba94-cbbe74c7a6f2.png)
  
-   Install the following packages:
+   Install the following packages (Python is required):
     If it prints "Requirement already satisfied: " you may just move on to the next package. In this example I'll be using pip, but if you have use pip3 or other package installers use those
 
     pip install PySimpleGUI
@@ -28,6 +28,7 @@ To use this code you must:
     pip install random
     pip install flask
 
+## Flask
 
 Note, you can use: 
 
