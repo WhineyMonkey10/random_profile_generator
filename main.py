@@ -1,5 +1,6 @@
 ############### - Imports - ###############
-from src import *
+from src.gui import *
+
 
 from numpy import true_divide
 from src.gens.agegen import *
@@ -22,7 +23,7 @@ from src.gens.eyecolourgen import *
 
 from src.gui.main import *
 
-from src.localserver.website.localserver import *
+#from web import *
 
 import time
 
@@ -86,10 +87,12 @@ finalguicompatible = str(finalguicompatible)
 finalguicompatible = ''.join(finalguicompatible)
 #Using the users inpit method to determine the 'type' of profile they want to generate 
 
-if type == "web server":
-    from src.localserver.website.localserver import *
+def initialise_server():
+    print("Initialising server...")
 
-    initalise_server()
+if type == "web server":
+
+    initialise_server()
 
 elif type == "gui":
     sg.theme('BlueMono')

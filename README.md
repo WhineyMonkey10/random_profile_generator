@@ -30,6 +30,14 @@ To use this code you must:
 
 ## Flask
 
+Before using the web server option be sure to run the following (or if the web server option errors also run this):
+
+    $env:FLASK_APP = "web.py"
+
+If that command doesn't work use this command:
+   
+    set FLASK_APP=web.py
+
 Note, you can use: 
 
     python -c "import flask; print(flask.__version__)"
