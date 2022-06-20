@@ -1,7 +1,7 @@
 from flask import Flask
 from src import *
 app = Flask(__name__)
-app.run()
+
 
 @app.route('/')
 def index():
@@ -16,3 +16,5 @@ def generate():
 @app.route("/generate/<username>")
 def greet(username):
     return "Hello " + username + "!"
+
+app.run()
