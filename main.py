@@ -23,8 +23,6 @@ from src.gens.eyecolourgen import *
 
 from src.gui.main import *
 
-#from web import *
-
 import time
 
 from tkinter import *
@@ -88,13 +86,10 @@ finalguicompatible = ''.join(finalguicompatible)
 #Using the users inpit method to determine the 'type' of profile they want to generate 
 
 def initialise_server():
-    print("Initialising server...")
+    print(f"{Fore.GREEN}Starting Server...")
+    print(f"{Fore.GREEN}Server Started.")
 
-if type == "web server":
-
-    initialise_server()
-
-elif type == "gui":
+if type == "gui":
     sg.theme('BlueMono')
     print("Please note that the GUI is still in development, please see the folder src/gui/ for the current gui process. Although, it still works. It has been opened.")
     #Initialise the GUI
@@ -104,6 +99,13 @@ elif type == "gui":
 
 elif type == "text":
     print(finalres)
+
+
+elif type == "web server":
+
+    initialise_server()
+    
+    from web import *
 
 
 #input("Do you want to save this profile? (Yes or No)")

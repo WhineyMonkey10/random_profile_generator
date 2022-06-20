@@ -1,19 +1,16 @@
 from flask import Flask
 from src import *
-from main import finalres
-
 app = Flask(__name__)
 app.run()
-
-
 
 @app.route('/')
 def index():
     return '<h1>Hello World!</h1>'
 
+
 @app.route('/generate')
 def generate():
-    return finalres
+    return '123'
 
 
 @app.route("/generate/<username>")
