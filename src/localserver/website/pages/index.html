@@ -22,10 +22,16 @@ body {
 
     </style>
 
+
 </head>
 <body>
     <h1>Random Profile Generator</h1>
     <h2>Release 2.0 (Beta)</h2>
-    <button type="button" class="buttonbegin">Generate</button>
+    <!--<input type="button" class="buttonbegin" onclick="{{ url_for( 'generate') }}">Begin</input>-->
+    <!--<input type="button" class="buttonbegin" name="generate" value="Generate">-->
+
+    <form action="{{ url_for('generate') }}" method="post">
+        <button name="generate" type="submit" class="buttonbegin">Generate</button>
+    </form>
 </body>
 </html>

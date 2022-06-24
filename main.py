@@ -75,7 +75,7 @@ print(Fore.RED + "None of these credentials, addresses, names, ages or others ar
 # Adding time for the user to read the disclaimer
 time.sleep(1)
 
-type = input(f"{Fore.CYAN}Please enter the type of profile you would like to generate (web server, gui, text): ")
+type = input(f"{Fore.CYAN}Please enter the type of profile you would like to generate (web server, gui, text) web server is recommended: ")
 type = (type.casefold())
 
 #Initialising the final product
@@ -88,6 +88,7 @@ finalguicompatible = ''.join(finalguicompatible)
 def initialise_server():
     print(f"{Fore.GREEN}Starting Server...")
     print(f"{Fore.GREEN}Server Started.")
+    print(f"{Fore.GREEN}Please visit http://localhost:5000/ OR http://127.0.0.1:5000")
 
 if type == "gui":
     sg.theme('BlueMono')
