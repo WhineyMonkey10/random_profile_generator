@@ -116,10 +116,6 @@ def index():
 def generate():
     return render_template('generation.html')
 
-@app.route("/generate/<username>")
-def greet(username):
-    return "Hello " + username + "!"
-
 
 @app.route("/generate", methods=['POST', 'GET'])
 def move_forward():
