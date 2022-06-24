@@ -1,11 +1,11 @@
-from flask import Flask
-from src import *
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
+#from src import *
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return '<h1>Hello World!</h1>'
+    return render_template('index.html')
 
 
 @app.route('/generate')

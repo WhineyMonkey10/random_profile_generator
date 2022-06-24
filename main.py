@@ -105,7 +105,7 @@ elif type == "web server":
 
     initialise_server()
     
-    from web import *
+    from src.localserver.website.web import *
 
 
 #input("Do you want to save this profile? (Yes or No)")
