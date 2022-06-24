@@ -8,11 +8,14 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <!--<img src= "{{ url_for('static', filename='images/Background.png')}}">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <style>
 
 body {
-    background-image: url(static/images/Background.png);
+    background-image: url(static/images/Background.webp);
     background-image: norepeat;
     background-size: cover;
 }
@@ -22,21 +25,7 @@ body {
 </head>
 <body>
     <h1>Random Profile Generator</h1>
-    <p>The button below will generate a random profile for you, press it to create one! 
-    </p>
-
-    
-<button id="id_btn" class="button" type="submit" pys-onclick="btn_clicked"> Generate a Profile Now </button>
-
-
-
-
-
-
- 
-
+    <h2>Release 2.0 (Beta)</h2>
+    <button type="button" class="buttonbegin">Generate</button>
 </body>
-    
- 
- 
 </html>
