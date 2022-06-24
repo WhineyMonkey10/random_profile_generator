@@ -85,10 +85,6 @@ finalguicompatible = str(finalguicompatible)
 finalguicompatible = ''.join(finalguicompatible)
 #Using the users inpit method to determine the 'type' of profile they want to generate 
 
-def initialise_server():
-    print(f"{Fore.GREEN}Starting Server...")
-    print(f"{Fore.GREEN}Server Started.")
-    print(f"{Fore.GREEN}Please visit http://localhost:5000/ OR http://127.0.0.1:5000")
 
 if type == "gui":
     sg.theme('BlueMono')
@@ -104,9 +100,35 @@ elif type == "text":
 
 elif type == "web server":
 
-    initialise_server()
+    print(f"{Fore.GREEN}Please visit http://localhost:5000/ OR http://127.0.0.1:5000")
+
+    from flask import Flask, render_template, Response, request, redirect, url_for
+    from src import *
+#from src import *
+app = Flask(__name__, template_folder='src/localserver/website/pages', static_folder='src/localserver/website/static')
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/generate', methods=['POST'])
+def generate():
+    return render_template('generation.html')
+
+@app.route("/generate/<username>")
+def greet(username):
+    return "Hello " + username + "!"
+
+
+@app.route("/generate", methods=['POST', 'GET'])
+def move_forward():
+    if request.method == 'POST' or 'GET':
+        return redirect(url_for('generate'))
+
+app.run()
     
-    from src.localserver.website.web import *
+    
 
 
 #input("Do you want to save this profile? (Yes or No)")
