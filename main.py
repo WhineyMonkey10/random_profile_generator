@@ -83,6 +83,7 @@ finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick
 finalguicompatible = "Your name is:", name, "also known as (your nickname)", nick,  "you live in", addr, ",and you are:", age,"years old!,", allergie, ".", favfood, "." "You were born in:", born,  "and your BFF is", bestfriend, "." ,"Your eye colour is:", eyecolour, "."
 finalguicompatible = str(finalguicompatible)
 finalguicompatible = ''.join(finalguicompatible)
+finalwebcomp = finalres.strip()
 #Using the users inpit method to determine the 'type' of profile they want to generate 
 
 
@@ -113,7 +114,7 @@ elif type == "web server":
 
     @app.route('/generate', methods=['POST'])
     def generate():
-        return render_template('generation.html', variable=finalguicompatible)
+        return render_template('generation.html', variable=finalwebcomp)
 
     @app.route("/generate/<username>")
     def greet(username):
