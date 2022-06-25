@@ -105,20 +105,17 @@ elif type == "web server":
 
     from flask import Flask, render_template, Response, request, redirect, url_for
     from src import *
+    from os import getcwd
     #from src import *
-    app = Flask(__name__, template_folder='src/localserver/website/pages', static_folder='src/localserver/website/static')
+    app = Flask(__name__, template_folder='src/localserver/website/pages', static_folder=f'{getcwd()}/src/localserver/website/static')
 
-    @app.route('/')
+    @app.route('/', methods=['GET', 'POST'])
     def index():
         return render_template('index.html')
 
-    @app.route('/generate', methods=['POST'])
+    @app.route('/generate', methods=['GET', 'POST'])
     def generate():
         return render_template('generation.html', variable=finalwebcomp)
-
-    @app.route("/generate/<username>")
-    def greet(username):
-        return "Hello " + username + "!"
 
 
     @app.route("/generate", methods=['POST', 'GET'])
