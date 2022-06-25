@@ -113,7 +113,7 @@ elif type == "web server":
 
     @app.route('/generate', methods=['POST'])
     def generate():
-        return render_template('generation.html', variable=finalres)
+        return render_template('generation.html', variable=finalguicompatible)
 
     @app.route("/generate/<username>")
     def greet(username):
