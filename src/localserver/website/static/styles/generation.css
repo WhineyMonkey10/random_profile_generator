@@ -1,0 +1,23 @@
+h2{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 73rem;
+    padding-top: 0.001rem;
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.button {
+    background-color: #BAE3DC;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4rem;
+    margin-left: 75rem;
+}
