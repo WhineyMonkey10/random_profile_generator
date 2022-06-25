@@ -17,11 +17,16 @@ Have fun generating!
 If you don't know how to actually install the files for the project, you can use the following instructions for guidance:
 
 To use this code you must:
-    - Download the project as a ZIP (Latest release recommended)
-    - Extract the ZIP into a file
-    - Download a code editing program such as [Visual Studio Code](https://code.visualstudio.com/)
-    - Upload the file to your chosen coding editing software
-    - Run the code, use the terminal at the begining
+
+      1. Download the project as a ZIP (Latest release recommended)
+      
+      2. Extract the ZIP into a file
+      
+      3. Download a code editing program such as [Visual Studio Code](https://code.visualstudio.com/)
+      
+      4. Upload the file to your chosen coding editing software
+     
+      5. Run the code, use the terminal at the begining
 
 ![download](https://user-images.githubusercontent.com/71403599/166504880-1d9a484e-f525-4b97-ba94-cbbe74c7a6f2.png)
  
