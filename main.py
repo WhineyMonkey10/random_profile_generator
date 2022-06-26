@@ -26,18 +26,18 @@ def gen_result(include_middle_name: str, final_type: str = "web"):
     eyecolour = gens.eyecolourgen()
     # Initialising the final product
 
-    finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
+    finalres = f"{Fore.CYAN}Your name is: {name} your nickname is {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
+    webcomp = f"Your name is: {name} also known as your nickname is {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
 
     if final_type == "text":
         return finalres
 
     if final_type == "web":
-        return finalres.strip()
+        return webcomp.strip()
 
     if final_type == "gui":
-        finalguicompatible = "Your name is:", name, "also known as (your nickname)", nick, "you live in", addr, ",and you are:", age, "years old!,", allergie, ".", favfood, "." "You were born in:", born, "and your BFF is", bestfriend, ".", "Your eye colour is:", eyecolour, "."
-        finalguicompatible = str(finalguicompatible)
-        return ''.join(finalguicompatible)
+        guicomp = f"Your name is: {name} your nickname is {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born}and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
+        return guicomp.strip()
 
 
 def web_server(debug: bool = False):
