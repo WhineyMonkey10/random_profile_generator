@@ -5,7 +5,7 @@
 Welcome to the official Random Profile Generator! Uses of this project include not wanting to share personal information on un trusted websites, or just to have fun looking at some silly names!
 This project was created with a mix of Python, HTML and CSS. Although support may be dropped for this project later on, it probabaly wont. The Discord server will include information about the project and includes some FaQ's or you can ask support directly from the head developer of the project. D
 
-To run this project, of course, just run the Main.py file. Also, don't worry if all of this is confusing, in v.3.1 there will be documentation! Not much at the start, but some will be added. Remember, if you want to use the web server option, be sure to follow the 'Flask' steps.
+To run this project, of course, just run the Run.py file. Also, don't worry if all of this is confusing, in v.3.1 there will be documentation! Not much at the start, but some will be added. Remember, if you want to use the web server option, be sure to follow the 'Flask' steps.
 
 You can join the Discord server @ https://discord.gg/VxgNQACtrk.
 
@@ -26,7 +26,7 @@ To use this code you must:
       
       4. Upload the file to your chosen coding editing software
      
-      5. Run the code, use the terminal at the begining
+      5. Run the file 'run.py', use the terminal at the begining
 
 ![download](https://user-images.githubusercontent.com/71403599/166504880-1d9a484e-f525-4b97-ba94-cbbe74c7a6f2.png)
  
