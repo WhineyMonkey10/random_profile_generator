@@ -54,7 +54,7 @@ class Gens:
 
     def allergiesGen(self):
         list_of_allergies = ["peanuts", "chickpeas", "cats", "horses", "bees", "wasps", "peas", "lupins", "potatoes",
-                             "tomatoes", "glutin", "lactose", "cheese", "dust", "hay feaver", "chickens", "ducks",
+                             "tomatoes", "glutin", "lactose", "cheese", "dust", "chickens", "ducks",
                              "cows", "crabs", "shrimp", "apples", "oranges", "bananas", "kiwis", "dogs"]
 
         random_allergienum = self.random.randint(0, len(list_of_allergies))
