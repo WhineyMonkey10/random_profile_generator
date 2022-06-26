@@ -1,4 +1,4 @@
-# Random Profile Generator
+# Random Profile Generator V.3.1
 
 ![image](https://user-images.githubusercontent.com/71403599/166505482-78b7a693-5a0e-43de-833d-2c7974adb90b.png)
 
