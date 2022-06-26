@@ -1,21 +1,36 @@
-h1 {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 65rem;
-    margin-top: 20rem;
-    font-size: 3rem;
-    color: #fff;
+body, html {
+    height: 100%;
+    width: 100%;
 }
 
-h2{
+h1 {
     font-family: 'Nunito', sans-serif;
-    margin-left: 73rem;
-    padding-top: 0.001rem;
+    font-size: 3rem;
+    color: #111111;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
     font-size: 2rem;
-    color: #fff;
+    color: #111111;
     opacity: 0.8;
 }
 
 .buttonbegin {
+    background-color: #3ead9c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4rem;
+}
+
+.button {
     background-color: #BAE3DC;
     border: none;
     color: white;
@@ -27,5 +42,26 @@ h2{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4rem;
-    margin-left: 75rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.rounded-box {
+    border-radius: 25px;
+    background-color: whitesmoke;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    max-width: 400px;
+}
+
+.text-left {
+    width: 100%;
+    text-align: left;
 }

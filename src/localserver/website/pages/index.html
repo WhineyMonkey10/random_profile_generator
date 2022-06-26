@@ -5,33 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Profile Generator</title>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-    <!--<img src= "{{ url_for('static', filename='images/Background.png')}}">-->
+    <!--    <img src= "{{ url_for('static', filename='images/Background.png')}}">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Playfair+Display&family=Roboto:wght@300&display=swap"
+          rel="stylesheet">
 
     <style>
 
-body {
-    background-image: url(static/images/Background.webp);
-    background-image: norepeat;
-    background-size: cover;
-}
+        body {
+            background-image: url("{{ url_for('static', filename='images/Background.webp') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
     </style>
 
 
 </head>
 <body>
-    <h1>Random Profile Generator</h1>
-    <h2>Release 3.0 (Beta)</h2>
-    <!--<input type="button" class="buttonbegin" onclick="{{ url_for( 'generate') }}">Begin</input>-->
-    <!--<input type="button" class="buttonbegin" name="generate" value="Generate">-->
+<div class="flex-container">
+    <div class="rounded-box">
+        <h1>Random Profile Generator</h1>
+        <h2>Release 3.0 (Beta)</h2>
 
-    <form action="{{ url_for('generate') }}" method="post">
-        <button name="generate" type="submit" class="buttonbegin">Generate</button>
-    </form>
+        <form action="{{ url_for('generate') }}" method="post">
+            <label for="middle_name">Include middle name?</label>
+            <input type="checkbox" name="middle_name" id="middle_name">
+            <button name="generate" type="submit" class="buttonbegin">Generate</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
