@@ -1,133 +1,119 @@
-############### - Imports - ###############
-from src.gui import *
-
-
+import time
+import colorama
+from colorama import Back, Fore, Style
+from tkinter import *
+import PySimpleGUI as sg
 from numpy import true_divide
-from src.gens.agegen import *
 
-from src.gens.namegen import *
+from src.globals.classes.gens import Gens
 
-from src.gens.addressgen import *
+gens = Gens()
 
-from src.gens.nickgen import *
-
-from src.gens.allergies import *
-
-from src.gens.favouritefood import *
-
-from src.gens.borngen import *
-
-from src.gens.Bestfriend import *
-
-from src.gens.eyecolourgen import *
-
+from src.gui import *
 from src.gui.main import *
 
-import time
 
-from tkinter import *
+def gen_result(include_middle_name: str, final_type: str = "web"):
+    x = 0
+    name = gens.nameGenerator(include_middle_name)
+    age = gens.ageGenerator()
+    addr = gens.addrGenerator()
+    nick = gens.nickGen()
+    allergie = gens.allergiesGen()
+    favfood = gens.favouritefood()
+    born = gens.borngen()
+    bestfriend = gens.your_best_friend()
+    eyecolour = gens.eyecolourgen()
+    # Initialising the final product
 
-import PySimpleGUI as sg
+    finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
 
-import colorama
+    if final_type == "text":
+        return finalres
 
-from colorama import Back, Fore, Style
+    if final_type == "web":
+        return finalres.strip()
 
-############### - Def Calls - ###############
-
-x = 0
-
-# Defining the profiles name
-name = nameGenerator()
-
-# Defining the profiles age
-age = ageGenerator()
-
-# Defining the profiles adddress
-addr = addrGenerator()
-
-#Defining the profiles nickname
-nick = nickGen()
-
-#Defining the profiles allergy
-allergie = allergiesGen()
-
-#Defining the profiles favourite food
-favfood = favouritefood()
-
-#Defining the profiles location of birth
-born = borngen()
-
-#Definfing the profiles best friend
-bestfriend = your_best_friend()
-
-#Defining the profiles eye colour
-eyecolour = eyecolourgen()
-
-#Auto Reset
-colorama.init(autoreset=True)
-
-# Priting the above in a sentence & Adding a disclaimer
-print("DISCLAIMER: ")
-time.sleep(0.5)
-print(Fore.RED + "None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for educational purposes only.")
-
-# Adding time for the user to read the disclaimer
-time.sleep(1)
-
-type = input(f"{Fore.CYAN}Please enter the type of profile you would like to generate (web server, gui, text) web server is recommended: ")
-type = (type.casefold())
-
-#Initialising the final product
-finalres = f"{Fore.CYAN}Your name is: {name} also known as (your nickname) {nick},  you live in {addr}, and you are: {age} years old! {allergie}. {favfood}. You were born in: {born} and your BFF is {bestfriend}. Your eye colour is: {eyecolour}"
-finalguicompatible = "Your name is:", name, "also known as (your nickname)", nick,  "you live in", addr, ",and you are:", age,"years old!,", allergie, ".", favfood, "." "You were born in:", born,  "and your BFF is", bestfriend, "." ,"Your eye colour is:", eyecolour, "."
-finalguicompatible = str(finalguicompatible)
-finalguicompatible = ''.join(finalguicompatible)
-finalwebcomp = finalres.strip()
-#Using the users inpit method to determine the 'type' of profile they want to generate 
+    if final_type == "gui":
+        finalguicompatible = "Your name is:", name, "also known as (your nickname)", nick, "you live in", addr, ",and you are:", age, "years old!,", allergie, ".", favfood, "." "You were born in:", born, "and your BFF is", bestfriend, ".", "Your eye colour is:", eyecolour, "."
+        finalguicompatible = str(finalguicompatible)
+        return ''.join(finalguicompatible)
 
 
-if type == "gui":
-    sg.theme('BlueMono')
-    print("Please note that the GUI is still in development, please see the folder src/gui/ for the current gui process. Although, it still works. It has been opened.")
-    #Initialise the GUI
-    height = 500 #2
-    width = 2000 #1
-    create(width, height, finalres)
-
-elif type == "text":
-    print(finalres)
-
-
-elif type == "web server":
-
-    print(f"{Fore.GREEN}Please visit http://localhost:5000/ OR http://127.0.0.1:5000")
-
+def web_server(debug: bool = False):
     from flask import Flask, render_template, Response, request, redirect, url_for
-    from src import *
     from os import getcwd
-    #from src import *
-    app = Flask(__name__, template_folder='src/localserver/website/pages', static_folder=f'{getcwd()}/src/localserver/website/static')
 
-    @app.route('/', methods=['GET', 'POST'])
+    main = Flask(__name__)
+    main.template_folder = getcwd() + '/src/localserver/website/pages'
+    main.static_folder = getcwd() + '/src/localserver/website/static'
+    main.static_url_path = '/static'
+
+    if debug:
+        main.config['DEBUG'] = True
+
+    @main.route('/', methods=['GET', 'POST'])
     def index():
-        return render_template('index.html')
+        render = "index.html"
+        return render_template(render)
 
-    @app.route('/generate', methods=['GET', 'POST'])
+    @main.route('/generate', methods=['GET', 'POST'])
     def generate():
-        return render_template('generation.html', variable=finalwebcomp)
+        if request.method == "GET":
+            return redirect(url_for("index"))
+
+        render = "generation.html"
+        middle_name = "No"
+        if "middle_name" in request.form:
+            middle_name = "Yes"
+
+        return render_template(render, variable=gen_result(middle_name, "web"))
+
+    return main
 
 
-    @app.route("/generate", methods=['POST', 'GET'])
-    def move_forward():
-        if request.method == 'POST' or 'GET':
-            return redirect(url_for('generate'))
+def process():
+    # Auto Reset
+    colorama.init(autoreset=True)
 
-    app.run()
+    # Priting the above in a sentence & Adding a disclaimer
+    print("DISCLAIMER: ")
+    time.sleep(0.5)
+    print(
+        Fore.RED + "None of these credentials, addresses, names, ages or others are meant to replicate a person's actual personal credentials. Any malicious use of this project is not my responsability, this is for educational purposes only.")
 
-    
+    # Adding time for the user to read the disclaimer
+    time.sleep(1)
+
+    type = input(
+        f"{Fore.CYAN}Please enter the type of profile you would like to generate (web server, gui, text) web server is recommended: ")
+    type = (type.casefold())
+
+    # Using the users inpit method to determine the 'type' of profile they want to generate
+
+    if type == "gui":
+        sg.theme('BlueMono')
+        middle_name = input(f"{colorama.Fore.CYAN}Do you want your name to include a middle name? (Yes or No?): ")
+
+        print("""
+    Please note that the GUI is still in development, please see the folder src/gui/ for the current gui process. 
+    Although, it still works. It has been opened.
+            """)
+        # Initialise the GUI
+        height = 500  # 2
+        width = 2000  # 1
+        create(width, height, gen_result(middle_name, "gui"))
+
+    elif type == "text":
+        middle_name = input(f"{colorama.Fore.CYAN}Do you want your name to include a middle name? (Yes or No?): ")
+        print(gen_result(middle_name, "text"))
+
+    elif type == "web server":
+        print(f"{Fore.GREEN}Please visit http://localhost:5000/ OR http://127.0.0.1:5000")
+        server = web_server()
+        server.run()
+
+    return
 
 
-#input("Do you want to save this profile? (Yes or No)")
-
-
+process()
