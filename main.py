@@ -111,7 +111,7 @@ def process():
     elif type == "web server":
         print(f"{Fore.GREEN}Please visit http://localhost:5000/ OR http://127.0.0.1:5000")
         server = web_server()
-        server.run()
+        server.run() #Change to server.run(host="0.0.0.0") to run on your local network
 
     return
 
