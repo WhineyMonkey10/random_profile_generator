@@ -1,9 +1,9 @@
-# Random Profile Generator V.3.1
+# Random Profile Generator V.3.1 - Project Dropped (May Update Later On)
 
 ![image](https://user-images.githubusercontent.com/71403599/166505482-78b7a693-5a0e-43de-833d-2c7974adb90b.png)
 
-Welcome to the official Random Profile Generator! Uses of this project include not wanting to share personal information on un trusted websites, or just to have fun looking at some silly names!
-This project was created with a mix of Python, HTML and CSS. Although support may be dropped for this project later on, it probabaly wont. The Discord server will include information about the project and includes some FaQ's or you can ask support directly from the head developer of the project. D
+Welcome to the official Random Profile Generator! Uses of this project include not wanting to share personal information on untrusted websites, or just to have fun looking at some silly names!
+This project was created with a mix of Python, HTML and CSS. The Discord server will include information about the project and includes some FaQ's or you can ask support directly from the head developer of the project. :D
 
 To run this project, of course, just run the Run.py file. Also, don't worry if all of this is confusing, in v.3.1 there will be documentation! Not much at the start, but some will be added. Remember, if you want to use the web server option, be sure to follow the 'Flask' steps.
 
